@@ -27,6 +27,7 @@ COPY --from=upstream /usr/bin/ebusd   /usr/bin/ebusd
 COPY --from=upstream /usr/bin/ebusctl /usr/bin/ebusctl
 COPY --from=upstream /etc/ebusd/      /etc/ebusd/
 COPY --from=ttyd-upstream /usr/bin/ttyd /usr/bin/ttyd
+COPY --from=upstream /var/ebusd/   /var/ebusd/
 
 LABEL Description="ebusd"
 
